@@ -13,7 +13,7 @@ function main() {
 
 
 function createGrid(gridRow, gridColumn){
-    const containerWidth = 400;
+    const containerWidth = 600;
 
     const squareWidth = containerWidth / gridColumn
     divContainer.style.width = `${containerWidth}px`
@@ -53,10 +53,10 @@ function getRandomColor(){
 function changeGrid(){
     changeBtn.addEventListener('click', () => {
         while (true) {
-            gridRow = prompt("Enter the number of rows:");
-            gridColumn = prompt("Enter the number of columns:");
+            gridRow = prompt("Enter the number of rows (max 100)");
+            gridColumn = prompt("Enter the number of columns (max 100)");
     
-            if (gridRow < 100 && gridColumn < 100) {
+            if (gridRow < 101 && gridColumn < 101) {
                 break;
             } else {
                 alert("Both column and row should be less than 100. Please try again.");

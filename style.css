@@ -5,29 +5,42 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(to top, pink, yellow);
+    overflow: hidden;
+
+
 }
+
 
 #container {
     display: flex;
     border: 3px solid black;
     flex-wrap: wrap;
+    margin-top: 20px;
+    width: 600px;
+    max-width: 100%;
+    margin-bottom: 40px;
 }
 
 #container div {
+    display: flex;
     border: 1px solid black;
-    height: 21px;
-    width: 21px;
     background-color: lightgray;
     box-sizing: border-box;
 
 }
 
-#newGrid{
+#newGrid, #clear{
     display: flex;
     margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
 }
 
+#newGrid{
+    background: lightskyblue;
+}
 #clear {
-    display: flex;
-    margin-bottom: 10px;
+    background: lightpink;
 }

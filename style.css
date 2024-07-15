@@ -4,12 +4,12 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #container {
     display: flex;
     border: 3px solid black;
-    width: 400px;
     flex-wrap: wrap;
 }
 
@@ -19,7 +19,15 @@ body, html {
     width: 21px;
     background-color: lightgray;
     box-sizing: border-box;
-    /* flex basis was used to make it so only 16 items per row of 100% of the div container*/
-    flex-basis: calc(100% / 16)
+
 }
 
+#newGrid{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#clear {
+    display: flex;
+    margin-bottom: 10px;
+}

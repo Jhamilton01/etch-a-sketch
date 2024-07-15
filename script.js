@@ -13,10 +13,9 @@ function main() {
 
 
 function createGrid(gridRow, gridColumn){
-    const containerWidth = 600;
-
+    const containerWidth = divContainer.clientWidth
     const squareWidth = containerWidth / gridColumn
-    divContainer.style.width = `${containerWidth}px`
+
 
     for (let i = 0; i < (gridRow * gridColumn); i++){
         let square = document.createElement('div')

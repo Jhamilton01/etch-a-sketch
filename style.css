@@ -16,9 +16,10 @@ body, html {
     display: flex;
     border: 3px solid black;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
-    width: 600px;
-    max-width: 100%;
+    width: 90vw;
+    max-width: 600px;
     margin-bottom: 40px;
 }
 
@@ -30,8 +31,7 @@ body, html {
 
 }
 
-#newGrid, #clear{
-    display: flex;
+button{
     margin-bottom: 10px;
     padding: 10px;
     font-size: 16px;
@@ -43,4 +43,20 @@ body, html {
 }
 #clear {
     background: lightpink;
+}
+
+@media (max-width: 768px){
+    h1 {
+        font-size: 1.5em;
+    }
+    button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    #container {
+        width: 95vw;
+    }
+    #container div {
+        border-width: 1px;
+    }
 }
